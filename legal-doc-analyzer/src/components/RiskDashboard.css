@@ -1,0 +1,115 @@
+.risk-dashboard {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+.dashboard-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.risk-score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.risk-score-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 8px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-tertiary);
+}
+
+.risk-score-value {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.risk-score-max {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.risk-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.risk-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.breakdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.breakdown-bar {
+  height: 24px;
+  background: var(--bg-tertiary);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.breakdown-fill {
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+.breakdown-fill.risky {
+  background: linear-gradient(90deg, var(--risk-high), var(--risk-medium));
+}
+
+.breakdown-fill.safe {
+  background: linear-gradient(90deg, var(--risk-low), var(--accent-primary));
+}
+
+.breakdown-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.breakdown-count {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.breakdown-text {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.risk-summary {
+  padding: 1rem;
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-primary);
+}
+
+.risk-summary-text {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.risk-summary-text strong {
+  color: var(--text-primary);
+}

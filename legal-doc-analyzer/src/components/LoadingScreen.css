@@ -1,0 +1,124 @@
+.loading-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: var(--bg-primary);
+}
+
+.loading-card {
+  max-width: 500px;
+  width: 100%;
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.loading-card.error {
+  border: 2px solid var(--risk-high);
+}
+
+.lock-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.error-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.loading-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.loading-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.progress-container {
+  margin-bottom: 2rem;
+}
+
+.progress-bar {
+  height: 12px;
+  background: var(--bg-tertiary);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-hover));
+  transition: width 0.3s ease;
+  border-radius: 6px;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.privacy-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+.feature-icon {
+  color: var(--risk-low);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.download-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.error-message {
+  color: var(--risk-high);
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(239, 68, 68, 0.1);
+  border-radius: 8px;
+}
+
+.retry-btn {
+  padding: 0.75rem 2rem;
+  background: var(--accent-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.retry-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}

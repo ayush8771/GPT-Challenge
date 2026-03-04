@@ -1,0 +1,57 @@
+.privacy-badge {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.privacy-badge.processing {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(37, 99, 235, 0.1));
+  border-color: var(--accent-primary);
+}
+
+.badge-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.badge-content {
+  flex: 1;
+}
+
+.badge-title {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.badge-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.pulse-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--risk-low);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.3);
+  }
+}

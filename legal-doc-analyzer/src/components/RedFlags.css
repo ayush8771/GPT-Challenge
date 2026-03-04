@@ -1,0 +1,86 @@
+.red-flags-section {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+.no-flags {
+  padding: 2rem;
+  text-align: center;
+  color: var(--risk-low);
+  font-size: 1.1rem;
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+}
+
+.flags-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.flag-card {
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-left: 4px solid;
+  transition: transform 0.2s;
+}
+
+.flag-card:hover {
+  transform: translateX(4px);
+}
+
+.flag-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.flag-severity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.flag-emoji {
+  font-size: 1.2rem;
+}
+
+.flag-severity-label {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.flag-category {
+  background: var(--bg-secondary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.flag-text {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.flag-explanation {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.flag-explanation strong {
+  color: var(--text-primary);
+}

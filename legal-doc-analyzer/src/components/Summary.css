@@ -1,0 +1,22 @@
+.summary-section {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.summary-content {
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.summary-content p {
+  margin-bottom: 1rem;
+}
